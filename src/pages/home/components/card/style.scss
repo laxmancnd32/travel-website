@@ -1,0 +1,56 @@
+.card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 305px;
+    height: 352px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    .image {
+        height: 145px;
+        border-radius: 20px;
+    }
+    .tags {
+        margin-top: 15px;
+        span {
+            background-color: #F6C937;
+            border-radius: 11.5px;
+            color: #FFFFFF;
+            font-weight: 600;
+            padding: 3.5px 8px;
+            margin-left: 5px;
+            text-transform: uppercase;
+        }
+    }
+    .name {
+        margin: 15px 0 0 10px;
+        color: #2B2ECF;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+    }
+    .description {
+        margin: 15px 0 0 10px;
+        color: #7F8A9C;
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow-y: hidden;
+    }
+    .feedback {
+        margin: 5px 0 0 10px;
+        align-self: end;
+        position: absolute;
+        bottom: 5px;
+         .like, .comment {
+            cursor: pointer;
+         }
+         .comment {
+            margin-right: 10px;
+         }
+    }
+}
