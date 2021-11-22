@@ -14,20 +14,20 @@ const SideBar = (props) => {
     return (
       <div className="sidebar">
         <img className="logo" src={StLogo} alt="logo" />
-        <ul className="sidebar-list">
+        <div className="sidebar-list">
           {SIDENAV_COPY.map((item, index) => {
             return (
-              <li>
+              <div className="list-wrapper">
                 <NavLink className="navLink" activeClassName="active" id={`${item.name}-${index}`} to={item.url}>
                   <div>
                     <img src={item.icon} alt='sidebar-img'/>
+                    {item.name === 'NOTIFICATIONS' && <div className="notification-dot"></div>}
                   </div>
-                </NavLink>
-              </li>
-              
+                </NavLink>    
+              </div>          
             )
           })}
-        </ul>
+        </div>
         <div className="logout" onClick={logout}>
           <img src={LogoutIcon} alt="logout"/>
         </div>
