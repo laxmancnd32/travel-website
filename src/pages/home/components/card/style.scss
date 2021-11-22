@@ -8,9 +8,26 @@
     flex-direction: column;
     padding: 10px;
     position: relative;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    &:hover {
+        box-shadow: 0 5px 20px 0 rgba(43, 46, 207, 0.5);
+        border-radius: 20px;
+        transform: scale(1.1);
+        .card-checkbox {
+            display: block;
+        }
+    }
     .image {
         height: 145px;
         border-radius: 20px;
+        object-fit: cover;
+    }
+    .card-checkbox {
+        // display: none;
+        position: absolute;
+        right: 25px;
+        top: 15px;
     }
     .tags {
         margin-top: 15px;

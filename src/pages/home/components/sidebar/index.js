@@ -1,47 +1,22 @@
-import { NavLink } from 'react-router-dom';
-import HomeIcon from '../../../../assets/images/home.svg';
-import BriefCaseIcon from '../../../../assets/images/briefcase.svg';
-import CompassIcon from '../../../../assets/images/compass.svg';
-import BellIcon from '../../../../assets/images/bell.svg';
-import GearIcon from '../../../../assets/images/gear.svg';
+import { NavLink, useNavigate } from 'react-router-dom';
+import LogoutIcon from '../../../../assets/images/log-out.svg';
+import { SIDENAV_COPY } from '../../../constants.js';
 
 import './style.scss';
 
-const SIDENAV_COPY = [
-  {
-    name: 'HOME',
-    url: '/home',
-    icon: HomeIcon
-  },
-  {
-    name: 'BRIEFCASE',
-    url: '/business',
-    icon: BriefCaseIcon
-  },
-  {
-    name: 'COMPASS',
-    url: '/navigate',
-    icon: CompassIcon
-  },
-  {
-    name: 'NOTIFICATIONS',
-    url: '/notifications',
-    icon: BellIcon
-  },
-  {
-    name: 'SETTINGS',
-    url: '/settings',
-    icon: GearIcon
-  }
-]
 const SideBar = (props) => {
+  const navigate = useNavigate();
+  
+  const logout = () => {
+    navigate('/login');
+  }
     return (
       <div className="sidebar">
         <ul className="sidebar-list">
           {SIDENAV_COPY.map((item, index) => {
             return (
               <li>
-                <NavLink className="navLink" activeClassName="active" id={`${item.name}-${index}`} exact to={item.url}>
+                <NavLink className="navLink" activeClassName="active" id={`${item.name}-${index}`} to={item.url}>
                   <div>
                     <img src={item.icon} alt='sidebar-img'/>
                   </div>
@@ -51,6 +26,9 @@ const SideBar = (props) => {
             )
           })}
         </ul>
+        <div className="logout" onClick={logout}>
+          <img src={LogoutIcon} alt="logout"/>
+        </div>
       </div>
     )
   }

@@ -32,6 +32,15 @@
             }
         }
     }
+    .logout {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 @media only screen and (max-width: 768px) {
     .sidebar {
