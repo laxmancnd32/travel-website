@@ -74,6 +74,7 @@
             .title {
                 width: 100%;
                 top: 50%;
+                line-height: 55px;
                 text-align: center;
                 font-size: 42px;
                 margin-top: 50%;
@@ -83,7 +84,7 @@
             }
             .toggle-card-view {
                 margin: 0 auto;
-                margin-top: 27%;
+                margin-top: 19%;
             }
         }
         .content {
@@ -94,13 +95,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            .card {
-                width: 90% !important;
-                &.list-view {
+            &.list-view {
+                .card {
                     .card-checkbox, .tags, .description {
                         display: none !important;
                     }
                 }
+            }
+            .card {
+                width: 90% !important;
             }
         }
     }
