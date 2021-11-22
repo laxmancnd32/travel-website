@@ -4,7 +4,7 @@ import HeartActiveIcon from '../../../../assets/images/heart-active.svg';
 import CommentIcon from '../../../../assets/images/comment.svg';
 import CommentActiveIcon from '../../../../assets/images/comment-active.svg';
 
-import Checkbox from '../checkboxes/circular-checkbox';
+import Checkbox from '../../../commonComponents/checkbox';
 import './style.scss';
 
 const Card = (props) => {
