@@ -41,18 +41,27 @@
             font-size: 14px;
             display: flex;
             align-items: center;
-            .checkbox {
-                background-color: #FF0066;
-                border-radius: 6px;
-                width: 16px;
-                height: 16px;
-                &:hover {
-                    cursor: pointer;
+            .login-checkbox {
+                input[type="checkbox"]:checked + label {
+                    background-color: #FF0066;
+                    border-color: #FF0066;
+                }
+                label {
+                    background-color: #fff;
+                    border-radius: 6px;
+                    width: 24px;
+                    height: 24px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &::after {
+                        top: 6px;
+                    }
                 }
             }
             .text {
                 color: #7F8A9C;
-                margin-left: 5px;
+                margin-left: 15px;
                 span {
                     font-weight: 600;
                     color: #FF0066;
@@ -92,6 +101,11 @@
         background-image: url(https://marvel-live.freetls.fastly.net/canvas/2021/6/9fd1534c23ac4061a362435b010e91ae?quality=95&fake=.png);
         background-size: 112%;
         width: 50%;
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px
     }
 }
 

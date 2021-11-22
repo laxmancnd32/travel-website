@@ -42,15 +42,15 @@ const Card = (props) => {
     }
 
     const { cardInfo = {}, index = '' } = props;
-    const { name = '', description = '', places = [], image = ''} = cardInfo;
+    const { name = '', description = '', places = [], image = '' } = cardInfo;
     
     return (
-        <div className="card" ref={cardRef} key={`${index}-${name}`} onClick={toggleCheckbox}>
+        <div className={"card"} ref={cardRef} key={`${index}-${name}`} onClick={toggleCheckbox}>
             <img className="image" src={image} alt="imgg-card" />
             <Checkbox
                 index={index}
                 className="card-checkbox"
-                // onChange={toggleCheckbox}
+                onChange={toggleCheckbox}
                 checked={isCardSelected}
                 name="card-checkbox"
             />

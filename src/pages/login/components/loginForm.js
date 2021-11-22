@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import TextField from '../../commonComponents/textField';
+import Checkbox from '../../commonComponents/checkbox';
 
 import userIcon from '../../../assets/images/user-icon.svg';
 import userEmailIcon from '../../../assets/images/user-email-icon.svg';
@@ -100,12 +101,12 @@ const LoginForm = (props) => {
         errorMsg={passwordError}
       />
       <div className="terms-and-condition">
-        <input
-          className="checkbox"
-          type="checkbox"
+        <Checkbox
+          index={0}
+          className="login-checkbox"
+          onChange={toggleCheckBox}
           checked={termsAccepted}
           name="isChecked"
-          onChange={toggleCheckBox}
         />
         <div className="text">I agree to the <span>Terms</span> and <span>Privacy Policy.</span></div>
       </div>

@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import LogoutIcon from '../../../../assets/images/log-out.svg';
+import StLogo from '../../../../assets/images/st-logo.svg';
 import { SIDENAV_COPY } from '../../../constants.js';
 
 import './style.scss';
@@ -12,6 +13,7 @@ const SideBar = (props) => {
   }
     return (
       <div className="sidebar">
+        <img className="logo" src={StLogo} alt="logo" />
         <ul className="sidebar-list">
           {SIDENAV_COPY.map((item, index) => {
             return (

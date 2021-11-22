@@ -37,7 +37,7 @@ export const DESTINATIONS = [
       image: 'https://marvel-live.freetls.fastly.net/canvas/2020/9/9b1e75bcc09949b0acdb1c14e3cfa9b0?quality=95&fake=.png)'
     },
     {
-      name: '',
+      name: 'opasjc asboivban',
       description: 'jisdnvposd vsdpovnsdpon sdpovnsdp sdpovnsdpovnsdpo',
       places: ['iowe', 'bjaks', 'p[fjpowe'],
       image: 'https://marvel-live.freetls.fastly.net/canvas/2020/9/e891e109877d4cbfb4d3e070e825eff6?quality=95&fake=.png)'
@@ -55,13 +55,13 @@ export const DESTINATIONS = [
       image: 'https://marvel-live.freetls.fastly.net/canvas/2020/9/9b1e75bcc09949b0acdb1c14e3cfa9b0?quality=95&fake=.png)'
     },
     {
-      name: '',
+      name: 'Sample',
       description: 'jisdnvposd vsdpovnsdpon sdpovnsdp sdpovnsdpovnsdpo',
       places: ['iowe', 'bjaks', 'p[fjpowe'],
       image: 'https://marvel-live.freetls.fastly.net/canvas/2020/9/e891e109877d4cbfb4d3e070e825eff6?quality=95&fake=.png)'
     },
     {
-      name: '',
+      name: 'Test',
       description: 'jisdnvposd vsdpovnsdpon sdpovnsdp sdpovnsdpovnsdpo',
       places: ['iowe', 'bjaks', 'p[fjpowe'],
       image: 'https://marvel-live.freetls.fastly.net/canvas/2020/9/e891e109877d4cbfb4d3e070e825eff6?quality=95&fake=.png)'
